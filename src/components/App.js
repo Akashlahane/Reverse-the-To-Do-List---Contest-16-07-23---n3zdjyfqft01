@@ -15,6 +15,11 @@ function ToDo() {
   </tr>)
 }
 
+function reverseOrder(){
+
+  
+}
+
 function App() {
   const [todos, setTodos] = useState([{
     id: 'todo1',
@@ -27,7 +32,7 @@ function App() {
 
   return (
     <div id="main">
-      <button>Reverse</button>
+      <button onClick="reverseOrder">Reverse</button>
       <table>
         <tbody>
         </tbody>
