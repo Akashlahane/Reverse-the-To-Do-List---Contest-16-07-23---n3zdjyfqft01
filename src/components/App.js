@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
 import '../styles/App.css';
 
-function ToDo() {
+function ToDo(obj) {
   return (<tr>
     <td>
-      <p>id</p>
+      <p>{obj.id}</p>
     </td>
     <td>
       <input />
     </td>
     <td>
-      <p>createdAt</p>
+      <p>{obj.createdAt}</p>
     </td>
   </tr>)
 }
@@ -36,7 +36,10 @@ function App() {
       <button onClick="reverseOrder">Reverse</button>
       <table>
         <tbody>
-             
+             <>
+             <ToDo  obj = {todos[0]}/>
+             <ToDo obj = {todos[1]}/>
+             </>
         </tbody>
       </table>
     </div>
